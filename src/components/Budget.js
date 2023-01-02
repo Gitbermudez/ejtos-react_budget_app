@@ -23,12 +23,13 @@ const Budget = () => {
 	
 	return (
 		<div className='alert alert-secondary'>
-             <span>Budget: £</span>            
+             <span>Budget:£</span>            
 			<input 
             type="number"
             value={budget}
             defaultValue={budget}
-            step="10"        
+            step="10"     
+            style={{ marginRight: '2rem' , size: 8}}   
             onInput={(event)=>changeBudget(event.target.value)}
             >
             </input>
